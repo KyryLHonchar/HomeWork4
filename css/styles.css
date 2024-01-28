@@ -3,13 +3,43 @@ body {
     color: #434455;
     background-color: #fff;
 }
+
+p, h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 a{
     text-decoration: none;
 }
-ul, ul{
+ul, ol{
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 /* =============HEADER============ */
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo-navigation {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 332px;
+    justify-content: space-between;
+}
+
 .logo {
     color:#4D5AE5;
 font-family: Raleway, sans-serif;
@@ -23,7 +53,8 @@ text-transform: uppercase;
     color: #2E2F42;
 }
 .nav-list{
-    
+ display: flex;
+ gap: 40px;
 }
 .nav-link {
     color:  #2e2f42 ;
@@ -38,13 +69,21 @@ letter-spacing: 0.02em;
     color: #404bbf;
 }
 
-.address-list{
+.address-container {
+    display: flex;
+}
 
+.address-list{
 }
 
 .address {
     font-style: normal;
     
+}
+
+.address-item {
+    display: flex;
+    gap: 40px;
 }
 .address-link {
     color:  #434455;
@@ -62,16 +101,21 @@ letter-spacing: 0.02em;
 /* ================INFO============== */
 .info { 
     background-color:#2E2F42;
+    padding-bottom: 120px;
 }
+
 
 .info-title {
     color: #FFF;
-text-align: center;
-
+    text-align: center;
 font-size: 56px;
 font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
+max-width: 496px;
+max-height: 120px;
+padding-top: 188px;
+
 }
 
 
@@ -84,6 +128,15 @@ letter-spacing: 0.02em;
     letter-spacing: 0.04em;
     cursor: pointer;
     background-color: #4D5AE5;
+    margin-top: 48px;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    border: none;
+    border-radius: 4px;
+    
+
 }
 .info-btn:hover,
 .info-btn:focus {
@@ -97,6 +150,10 @@ letter-spacing: 0.02em;
 
 /* =================HERO=================== */
 .hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 
 .hero-name {
@@ -109,9 +166,12 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 }
 .hero-list {
+    display: flex;
+    gap: 24px;
 }
 
 .hero-items {
+    width: calc(100% - 4 * 24) / 4;
 }
 
 .hero-subtitles {
@@ -121,6 +181,7 @@ text-transform: capitalize;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     
 
 }
@@ -138,7 +199,10 @@ letter-spacing: 0.02em;
 
 /* =========================TEAM============ */
 .team-background {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #F4F4FD   
+    
 }
 .team {
     color:#2E2F42;
@@ -148,15 +212,20 @@ letter-spacing: 0.02em;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
     
 }
 
 .team-list {
     background-color:#F4F4FD ;
+    display: flex;
+    gap: 24px;
 }
 
 .team-items {
     background-color: #FFFFFF;
+    margin-bottom: 120px;
+    width: calc(100% - 4 * 24) / 4;
 }
 
 .team-subtitle {
@@ -165,6 +234,8 @@ letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-top: 32px;
 }
 
 .team-text {
@@ -173,12 +244,16 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-bottom: 32px;
 }
 /* ====================================*/
 
 
 /* ==========PORTFOLIO=================== */
-
+.porfolio-baza {
+    padding-top: 83px;
+    padding-bottom: 120px;
+}
 .porfolio {
     color:#2E2F42;
     text-align: center;
@@ -187,12 +262,18 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+margin-bottom: 72px;
 }
 
 .porfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
 }
 
 .porfolio-title {
+    
+    width: calc(100% - 3 * 24) / 3;
 }
 
 .porfolio-subitems {
@@ -201,7 +282,9 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
+
 
 .porfolio-text {
     color: #434455;
@@ -210,6 +293,7 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-bottom: 32px;
 }
 /* ========================================= */
 
@@ -227,6 +311,9 @@ font-weight: 700;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+padding-left: 156px;
+padding-top: 100px;
+
 }
 .footer-logo-part {
     color:#F4F4FD;
@@ -237,5 +324,9 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
+padding-left: 156px;
+padding-right: 1020px;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 /* ================================== */
