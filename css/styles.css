@@ -161,9 +161,7 @@ padding-bottom: 188px;
 .hero {
     padding-top: 120px;
     padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
-}
+ }
 
 .hero-name {
     color:#2E2F42;
@@ -225,6 +223,17 @@ letter-spacing: 0.02em;
     
 }
 
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      
+}
 .container-team {
     padding-top: 32px; 
     padding-bottom: 32px;
@@ -234,6 +243,7 @@ letter-spacing: 0.02em;
     background-color:#F4F4FD ;
     display: flex;
     gap: 24px;
+    
 }
 
 
