@@ -231,7 +231,8 @@ letter-spacing: 0.02em;
 }
 
 .container-our-team {
-    padding: 32px 0 32px; 
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
