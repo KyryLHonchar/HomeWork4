@@ -97,6 +97,7 @@ display: block;
 }
 .address-link {
     color:  #434455;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -124,6 +125,7 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 max-width: 496px;
 margin: 0 auto;
+
 }
 
 
@@ -185,7 +187,7 @@ text-transform: capitalize;
 
 .hero-subtitles {
     color: #2E2F42;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -317,7 +319,7 @@ margin-bottom: 72px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 
 }
 
